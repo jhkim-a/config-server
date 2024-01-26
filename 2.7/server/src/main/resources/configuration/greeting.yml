@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    bus:
+      enabled: true
+      destination: default.springCloudBus
+
+greeting:
+  message: server-greeting-hello

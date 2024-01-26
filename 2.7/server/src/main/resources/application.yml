@@ -1,0 +1,25 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  profiles:
+    group:
+      default: native
+      local: native
+      dev: native
+      stage: native
+      prod: native
+
+  cloud:
+    config:
+      server:
+        prefix: /config
+        native:
+          search-locations: classpath:/configuration
+    bus:
+      enabled: true
+      destination: default.springCloudBus
+
+management:
+  endpoints.web.exposure.include: "*"

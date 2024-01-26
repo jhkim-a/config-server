@@ -1,0 +1,12 @@
+# Custom
+build/
+repository/ehcache/
+
+
+# IntelliJ Idea
+.idea/
+*.iml
+*.ipr
+
+# Gradle
+.gradle/

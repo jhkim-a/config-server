@@ -1,0 +1,20 @@
+greeting:
+  message: client-additional-hello
+
+---
+spring:
+  config:
+    activate:
+      on-profile: hello
+
+greeting:
+  message: client-additional-hello-profile-hello
+
+---
+spring:
+  config:
+    activate:
+      on-profile: world
+
+greeting:
+  message: client-additional-world-profile-hello

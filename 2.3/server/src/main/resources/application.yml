@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    include: native
+  cloud:
+    config:
+      server:
+        prefix: /config
+        native.search-locations: classpath:/configuration
+
+management:
+  endpoints.web.exposure.include: "*"

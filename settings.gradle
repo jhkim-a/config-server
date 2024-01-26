@@ -1,0 +1,2 @@
+rootProject.name = 'config-server'
+include '2.3:server', '2.3:client', '2.7:server', '2.7:client'

@@ -1,0 +1,7 @@
+###
+# @name busrefresh
+POST http://localhost:8080/actuator/busrefresh
+
+###
+# @name env
+GET http://localhost:8080/actuator/env

@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    group:
+      local: hello, world
+  cloud:
+    config:
+      allow-override: true # default false
+      override-none: true # default false
+      override-system-properties: false # default true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+greeting:
+  message: server-application-default-hello

@@ -1,0 +1,16 @@
+#spring:
+#  application:
+#    name: greeting
+#  config:
+#    import: optional:configserver:http://localhost:8888/config
+#    import: configserver:http://localhost:8888/config
+#    import: "configserver:"
+#  cloud:
+#    config:
+#      uri: http://localhost:8888/config
+#    bus:
+#      enabled: true
+#      destination: default.springCloudBus
+
+greeting:
+  message: client-application-hello

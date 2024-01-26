@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: greeting
+  cloud:
+    config:
+      uri: http://localhost:8888/config
+      fail-fast: true
+    bus:
+      enabled: true
+      destination: default.springCloudBus
+
+greeting:
+  message: client-bootstrap-hello
