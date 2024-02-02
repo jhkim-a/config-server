@@ -13,4 +13,4 @@
 #      destination: default.springCloudBus
 
 greeting:
-  message: client-application-hello
+  message: client-resources-application=hello

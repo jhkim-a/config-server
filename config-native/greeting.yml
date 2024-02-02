@@ -1,5 +1,5 @@
 greeting:
-  message: client-additional-greeting=hello
+  message: server-native=hello
 
 ---
 spring:
@@ -8,7 +8,7 @@ spring:
       on-profile: hello
 
 greeting:
-  message: client-additional-greeting-p:hello=hello
+  message: server-native-p:hello=hello
 
 ---
 spring:
@@ -17,4 +17,4 @@ spring:
       on-profile: world
 
 greeting:
-  message: client-additional-greeting-p:world=hello
+  message: server-native-p:world=hello

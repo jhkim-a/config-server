@@ -15,4 +15,4 @@ management:
         include: "*"
 
 greeting:
-  message: server-application-default-hello
+  message: server-application=hello

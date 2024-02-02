@@ -1,2 +1,2 @@
 greeting:
-  message: server-greeting-world-hello
+  message: server-greeting-p:world=hello

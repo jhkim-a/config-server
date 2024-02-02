@@ -10,4 +10,4 @@ spring:
       destination: default.springCloudBus
 
 greeting:
-  message: client-bootstrap-hello
+  message: client-resources-bootstrap=hello

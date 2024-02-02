@@ -5,4 +5,4 @@ spring:
       destination: default.springCloudBus
 
 greeting:
-  message: server-greeting-hello
+  message: server-greeting=hello
