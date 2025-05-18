@@ -1,0 +1,27 @@
+name: Release Scheduler
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Profile (prod/dev)'
+        required: true
+        type: choice
+        options:
+          - prod
+          - dev
+  workflow_call:
+    inputs:
+      profile:
+        description: 'Profile (prod/dev)'
+        required: true
+        type: string
+
+jobs:
+  release:
+    name: Release
+    uses: spectrakr/attic-core-asset-actions/.github/workflows/ref-release.yml@main
+    with:
+      profile: ${{ inputs.profile }}
+      repo_name: attic-core-asset-scheduler
+    secrets: inherit
